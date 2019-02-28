@@ -9,7 +9,7 @@
               <div class="portfolio-menu">
                 <ul>
                   {{ $categories := slice }}
-                  {{ range .Site.Data.work.portfolio }}
+                  {{ range .Site.Data.locations.portfolio }}
                     {{ $categories = $categories | append .category }}
                   {{ end }}
                     <li class="filter" data-filter="all">Everything</li>
@@ -20,7 +20,7 @@
               </div>
               <div class="portfolio-contant">
                 <ul id="portfolio-contant-active">
-                  {{ range .Site.Data.work.portfolio }}
+                  {{ range .Site.Data.locations.portfolio }}
                     <li class="mix {{ .category }}">
                       <a class="venobox" href="{{ $.Site.BaseURL }}{{ .image }}">
                         <img class="img-responsive" src="{{ $.Site.BaseURL }}{{ .image }}" />
@@ -49,7 +49,7 @@
       <div class="col-md-12">
         <div class="block">
           <div id="clients-logo" class="owl-carousel">
-            {{ range .Site.Data.work.clients }}
+            {{ range .Site.Data.locations.clients }}
             <div class="clients-logo-img">
               <a href="{{ .url }}"><img src="{{ $.Site.BaseURL }}{{ .image }}" alt="Features"></a>
             </div>
