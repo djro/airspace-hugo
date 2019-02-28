@@ -1,7 +1,4 @@
-$(window).on('load', function () {
-
-
-	$("#portfolio-contant-active").mixItUp();
+$(document).ready(function () {
 
 
 	$("#testimonial-slider").owlCarousel({
@@ -81,4 +78,10 @@ $(window).on('load', function () {
 
 	// venobox
 	$('.venobox').venobox();
+});
+
+$(window).on('load', function () {
+
+	$("#portfolio-contant-active").mixItUp();
+
 });
