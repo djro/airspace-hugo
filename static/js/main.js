@@ -1,6 +1,12 @@
 $(document).ready(function () {
 
 
+});
+
+$(window).on('load', function () {
+
+	$("#portfolio-contant-active").mixItUp();
+
 	$("#testimonial-slider").owlCarousel({
 		paginationSpeed: 500,
 		singleItem: true,
@@ -78,10 +84,4 @@ $(document).ready(function () {
 
 	// venobox
 	$('.venobox').venobox();
-});
-
-$(window).on('load', function () {
-
-	$("#portfolio-contant-active").mixItUp();
-
 });
